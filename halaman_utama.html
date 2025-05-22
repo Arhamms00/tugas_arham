@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pendaftaran Anggota</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Form Pendaftaran Anggota</h1>
+    <form id="formDaftar" action="daftar.php" method="POST">
+      <div>
+        <label for="nomor">Nomor</label>
+        <input type="text" name="nomor" id="nomor" placeholder="Masukkan nomor" required />
+      </div>
+      <div>
+        <label for="nama">Nama Lengkap</label>
+        <input type="text" name="nama" id="nama" placeholder="Masukkan nama lengkap" required />
+      </div>
+      <div>
+        <label for="nik">NIK</label>
+        <input type="text" name="nik" id="nik" placeholder="Masukkan NIK" required />
+      </div>
+      <div>
+        <label for="alamat">Alamat</label>
+        <input type="text" name="alamat" id="alamat" placeholder="Masukkan alamat" required />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Masukkan email" required />
+      </div>
+      <div>
+        <label for="jenis_kelamin">Jenis Kelamin</label>
+        <select name="jenis_kelamin" id="jenis_kelamin" required>
+          <option value="" disabled selected>Pilih jenis kelamin</option>
+          <option value="Laki-laki">Laki-laki</option>
+          <option value="Perempuan">Perempuan</option>
+        </select>
+      </div>
+      <div class="btn-center" style="grid-column: span 2;">
+        <button class="btn btn-center">Daftar</button>
+        <a href="anggota.php" class="btn btn-center">Lihat Data Anggota</a>
+        <a href="index.html" class="btn btn-center">Kembali ke Beranda</a>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
